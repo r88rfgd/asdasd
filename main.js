@@ -51,7 +51,7 @@ async function loadAndRunWasm() {
         wasmStatusElement.className = 'status loading';
         
         // Fetch the WASM file
-        const response = await fetch('https://github.com/r88rfgd/asdasd/raw/refs/heads/main/module.wasm');
+        const response = await fetch('module.wasm');
         if (!response.ok) {
             throw new Error(`Failed to load WASM file: ${response.status} ${response.statusText}`);
         }
